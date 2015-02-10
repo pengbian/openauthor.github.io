@@ -1,0 +1,2486 @@
+{
+  "Namespaces": [
+    {
+      "Classes": [
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\AnalyzerAssemblyLoadEventArgs.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object",
+            "T:System.EventArgs"
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public Assembly LoadedAssembly",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs.LoadedAssembly",
+              "Parent": "T:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public string Path",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs.Path",
+              "Parent": "T:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.Reflection.Assembly : loadedAssembly": "",
+                  "T:System.String : path": ""
+                },
+                "Content": "public AnalyzerAssemblyLoadEventArgs(string path, Assembly loadedAssembly)",
+                "XmlDocumentation": "",
+                "StartLine": 12
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Reflection.Assembly : loadedAssembly": "",
+                  "T:System.String : path": ""
+                },
+                "Content": "public AnalyzerAssemblyLoadEventArgs(string path, Assembly loadedAssembly)",
+                "XmlDocumentation": "",
+                "StartLine": 12
+              },
+              "Id": "M:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs.#ctor(System.String,System.Reflection.Assembly)",
+              "Parent": "T:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public class AnalyzerAssemblyLoadEventArgs",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:Microsoft.CodeAnalysis.AnalyzerAssemblyLoadEventArgs",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": ""
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\AssemblyIdentityExtensions.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.AssemblyIdentity : identity": ""
+                },
+                "Returns": {
+                  "T:System.Reflection.AssemblyName": ""
+                },
+                "Content": "public static AssemblyName ToAssemblyName(this AssemblyIdentity identity)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.AssemblyIdentityExtensions.ToAssemblyName(Microsoft.CodeAnalysis.AssemblyIdentity)\">\r\n    <summary>\r\n    Converts this identity to <see cref=\"T:System.Reflection.AssemblyName\"/>.\r\n    </summary>\r\n    <returns>A new instance of <see cref=\"T:System.Reflection.AssemblyName\"/>.</returns>\r\n    <exception cref=\"T:System.Globalization.CultureNotFoundException\">The culture specified in <see cref=\"P:Microsoft.CodeAnalysis.AssemblyIdentity.CultureName\"/> is not available on the current platform.</exception>\r\n</member>\r\n",
+                "StartLine": 17
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.AssemblyIdentity : identity": ""
+                },
+                "Returns": {
+                  "T:System.Reflection.AssemblyName": ""
+                },
+                "Content": "public static AssemblyName ToAssemblyName(this AssemblyIdentity identity)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.AssemblyIdentityExtensions.ToAssemblyName(Microsoft.CodeAnalysis.AssemblyIdentity)\">\r\n    <summary>\r\n    Converts this identity to <see cref=\"T:System.Reflection.AssemblyName\"/>.\r\n    </summary>\r\n    <returns>A new instance of <see cref=\"T:System.Reflection.AssemblyName\"/>.</returns>\r\n    <exception cref=\"T:System.Globalization.CultureNotFoundException\">The culture specified in <see cref=\"P:Microsoft.CodeAnalysis.AssemblyIdentity.CultureName\"/> is not available on the current platform.</exception>\r\n</member>\r\n",
+                "StartLine": 17
+              },
+              "Id": "M:Microsoft.CodeAnalysis.AssemblyIdentityExtensions.ToAssemblyName(Microsoft.CodeAnalysis.AssemblyIdentity)",
+              "Parent": "T:Microsoft.CodeAnalysis.AssemblyIdentityExtensions",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.AssemblyIdentityExtensions.ToAssemblyName(Microsoft.CodeAnalysis.AssemblyIdentity)\">\r\n    <summary>\r\n    Converts this identity to <see cref=\"T:System.Reflection.AssemblyName\"/>.\r\n    </summary>\r\n    <returns>A new instance of <see cref=\"T:System.Reflection.AssemblyName\"/>.</returns>\r\n    <exception cref=\"T:System.Globalization.CultureNotFoundException\">The culture specified in <see cref=\"P:Microsoft.CodeAnalysis.AssemblyIdentity.CultureName\"/> is not available on the current platform.</exception>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public static class AssemblyIdentityExtensions",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:Microsoft.CodeAnalysis.AssemblyIdentityExtensions",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": ""
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\CommandLine\\CommonCommandLineArguments.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}": ""
+                },
+                "Content": "public IEnumerable<AnalyzerReference> ResolveAnalyzerReferences()",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveAnalyzerReferences\">\r\n    <summary>\r\n    Resolves analyzer references stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AnalyzerReferences\"/> using given file resolver.\r\n    </summary>\r\n    <returns>Yields resolved <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\"/> or <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference\"/>.</returns>\r\n</member>\r\n",
+                "StartLine": 321
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}": ""
+                },
+                "Content": "public IEnumerable<AnalyzerReference> ResolveAnalyzerReferences()",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveAnalyzerReferences\">\r\n    <summary>\r\n    Resolves analyzer references stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AnalyzerReferences\"/> using given file resolver.\r\n    </summary>\r\n    <returns>Yields resolved <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\"/> or <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference\"/>.</returns>\r\n</member>\r\n",
+                "StartLine": 321
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveAnalyzerReferences",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveAnalyzerReferences\">\r\n    <summary>\r\n    Resolves analyzer references stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AnalyzerReferences\"/> using given file resolver.\r\n    </summary>\r\n    <returns>Yields resolved <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\"/> or <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference\"/>.</returns>\r\n</member>\r\n"
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.MetadataReferenceResolver : metadataResolver": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}": ""
+                },
+                "Content": "public IEnumerable<MetadataReference> ResolveMetadataReferences(MetadataReferenceResolver metadataResolver)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveMetadataReferences(Microsoft.CodeAnalysis.MetadataReferenceResolver)\">\r\n    <summary>\r\n    Resolves metadata references stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\"/> using given file resolver and metadata provider.\r\n    </summary>\r\n    <param name=\"metadataResolver\"><see cref=\"T:Microsoft.CodeAnalysis.MetadataFileReferenceResolver\"/> to use for assembly name and relative path resolution.</param>\r\n    <returns>Yields resolved metadata references or <see cref=\"T:Microsoft.CodeAnalysis.UnresolvedMetadataReference\"/>.</returns>\r\n    <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"metadataResolver\"/> is null.</exception>\r\n</member>\r\n",
+                "StartLine": 232
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.MetadataReferenceResolver : metadataResolver": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}": ""
+                },
+                "Content": "public IEnumerable<MetadataReference> ResolveMetadataReferences(MetadataReferenceResolver metadataResolver)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveMetadataReferences(Microsoft.CodeAnalysis.MetadataReferenceResolver)\">\r\n    <summary>\r\n    Resolves metadata references stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\"/> using given file resolver and metadata provider.\r\n    </summary>\r\n    <param name=\"metadataResolver\"><see cref=\"T:Microsoft.CodeAnalysis.MetadataFileReferenceResolver\"/> to use for assembly name and relative path resolution.</param>\r\n    <returns>Yields resolved metadata references or <see cref=\"T:Microsoft.CodeAnalysis.UnresolvedMetadataReference\"/>.</returns>\r\n    <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"metadataResolver\"/> is null.</exception>\r\n</member>\r\n",
+                "StartLine": 232
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveMetadataReferences(Microsoft.CodeAnalysis.MetadataReferenceResolver)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineArguments.ResolveMetadataReferences(Microsoft.CodeAnalysis.MetadataReferenceResolver)\">\r\n    <summary>\r\n    Resolves metadata references stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\"/> using given file resolver and metadata provider.\r\n    </summary>\r\n    <param name=\"metadataResolver\"><see cref=\"T:Microsoft.CodeAnalysis.MetadataFileReferenceResolver\"/> to use for assembly name and relative path resolution.</param>\r\n    <returns>Yields resolved metadata references or <see cref=\"T:Microsoft.CodeAnalysis.UnresolvedMetadataReference\"/>.</returns>\r\n    <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"metadataResolver\"/> is null.</exception>\r\n</member>\r\n"
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<CommandLineSourceFile> AdditionalFiles",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AdditionalFiles\">\r\n    <summary>\r\n    A set of additional non-code text files that can be used by analyzers.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.AdditionalFiles",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AdditionalFiles\">\r\n    <summary>\r\n    A set of additional non-code text files that can be used by analyzers.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<CommandLineAnalyzerReference> AnalyzerReferences",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AnalyzerReferences\">\r\n    <summary>\r\n    References to analyzers supplied on the command line.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.AnalyzerReferences",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AnalyzerReferences\">\r\n    <summary>\r\n    References to analyzers supplied on the command line.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string AppConfigPath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AppConfigPath\">\r\n    <summary>\r\n    An absolute path of the App.config file or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.AppConfigPath",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.AppConfigPath\">\r\n    <summary>\r\n    An absolute path of the App.config file or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string BaseDirectory",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.BaseDirectory\">\r\n    <summary>\r\n    Directory used to resolve relative paths stored in the arguments.\r\n    </summary>\r\n    <remarks>\r\n    Except for paths stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\"/>, all\r\n    paths stored in the properties of this class are resolved and\r\n    absolute. This is the directory that relative paths specified on\r\n    command line were resolved against.\r\n    </remarks>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.BaseDirectory",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.BaseDirectory\">\r\n    <summary>\r\n    Directory used to resolve relative paths stored in the arguments.\r\n    </summary>\r\n    <remarks>\r\n    Except for paths stored in <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\"/>, all\r\n    paths stored in the properties of this class are resolved and\r\n    absolute. This is the directory that relative paths specified on\r\n    command line were resolved against.\r\n    </remarks>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public SourceHashAlgorithm ChecksumAlgorithm",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ChecksumAlgorithm\">\r\n    <summary>\r\n    Hash algorithm to use to calculate source file debug checksums.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.ChecksumAlgorithm",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ChecksumAlgorithm\">\r\n    <summary>\r\n    Hash algorithm to use to calculate source file debug checksums.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string CompilationName",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationName\">\r\n    <summary>\r\n    Compilation name or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationName",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationName\">\r\n    <summary>\r\n    Compilation name or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public CompilationOptions CompilationOptions",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationOptions\">\r\n    <summary>\r\n    Options to the <see cref=\"T:Microsoft.CodeAnalysis.Compilation\"/>.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationOptions",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationOptions\">\r\n    <summary>\r\n    Options to the <see cref=\"T:Microsoft.CodeAnalysis.Compilation\"/>.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "protected abstract CompilationOptions CompilationOptionsCore",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.CompilationOptionsCore",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public bool DisplayHelp",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.DisplayHelp\">\r\n    <summary>\r\n    If true, append the command line help during\r\n    <see cref=\"M:Microsoft.CodeAnalysis.CommonCompiler.Run(System.IO.TextWriter,System.Threading.CancellationToken)\"/>\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.DisplayHelp",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.DisplayHelp\">\r\n    <summary>\r\n    If true, append the command line help during\r\n    <see cref=\"M:Microsoft.CodeAnalysis.CommonCompiler.Run(System.IO.TextWriter,System.Threading.CancellationToken)\"/>\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public bool DisplayLogo",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.DisplayLogo\">\r\n    <summary>\r\n    If true, prepend the command line header logo during \r\n    <see cref=\"M:Microsoft.CodeAnalysis.CommonCompiler.Run(System.IO.TextWriter,System.Threading.CancellationToken)\"/>.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.DisplayLogo",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.DisplayLogo\">\r\n    <summary>\r\n    If true, prepend the command line header logo during \r\n    <see cref=\"M:Microsoft.CodeAnalysis.CommonCompiler.Run(System.IO.TextWriter,System.Threading.CancellationToken)\"/>.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string DocumentationPath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.DocumentationPath\">\r\n    <summary>\r\n    Absolute path of the documentation comment XML file or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.DocumentationPath",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.DocumentationPath\">\r\n    <summary>\r\n    Absolute path of the documentation comment XML file or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public EmitOptions EmitOptions",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.EmitOptions\">\r\n    <summary>\r\n    Gets the emit options.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.EmitOptions",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.EmitOptions\">\r\n    <summary>\r\n    Gets the emit options.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public bool EmitPdb",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.EmitPdb\">\r\n    <summary>\r\n    True to emit PDB file.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.EmitPdb",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.EmitPdb\">\r\n    <summary>\r\n    True to emit PDB file.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public Encoding Encoding",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Encoding\">\r\n    <summary>\r\n    Encoding to be used for source files or 'null' for autodetect/default.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.Encoding",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Encoding\">\r\n    <summary>\r\n    Encoding to be used for source files or 'null' for autodetect/default.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<Diagnostic> Errors",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Errors\">\r\n    <summary>\r\n    Errors while parsing the command line arguments.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.Errors",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Errors\">\r\n    <summary>\r\n    Errors while parsing the command line arguments.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<string> KeyFileSearchPaths",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.KeyFileSearchPaths\">\r\n    <summary>\r\n    Sequence of absolute paths used to search for key files.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.KeyFileSearchPaths",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.KeyFileSearchPaths\">\r\n    <summary>\r\n    Sequence of absolute paths used to search for key files.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<ResourceDescription> ManifestResources",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ManifestResources\">\r\n    <summary>\r\n    Resources specified as arguments to the compilation.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.ManifestResources",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ManifestResources\">\r\n    <summary>\r\n    Resources specified as arguments to the compilation.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<CommandLineReference> MetadataReferences",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\">\r\n    <summary>\r\n    References to metadata supplied on the command line. \r\n    Includes assemblies specified via /r and netmodules specified via /addmodule.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.MetadataReferences\">\r\n    <summary>\r\n    References to metadata supplied on the command line. \r\n    Includes assemblies specified via /r and netmodules specified via /addmodule.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public bool NoWin32Manifest",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.NoWin32Manifest\">\r\n    <summary>\r\n    If true, do not embed any Win32 manifest, including\r\n    one specified by <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Manifest\"/> or any\r\n    default manifest.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.NoWin32Manifest",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.NoWin32Manifest\">\r\n    <summary>\r\n    If true, do not embed any Win32 manifest, including\r\n    one specified by <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Manifest\"/> or any\r\n    default manifest.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string OutputDirectory",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.OutputDirectory\">\r\n    <summary>\r\n    Absolute path of the output directory.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.OutputDirectory",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.OutputDirectory\">\r\n    <summary>\r\n    Absolute path of the output directory.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string OutputFileName",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.OutputFileName\">\r\n    <summary>\r\n    Name of the output file or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.OutputFileName",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.OutputFileName\">\r\n    <summary>\r\n    Name of the output file or null if not specified.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ParseOptions ParseOptions",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ParseOptions\">\r\n    <summary>\r\n    Options to the <see cref=\"T:Microsoft.CodeAnalysis.CommandLineParser\"/>.\r\n    </summary>\r\n    <returns></returns>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.ParseOptions",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ParseOptions\">\r\n    <summary>\r\n    Options to the <see cref=\"T:Microsoft.CodeAnalysis.CommandLineParser\"/>.\r\n    </summary>\r\n    <returns></returns>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "protected abstract ParseOptions ParseOptionsCore",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.ParseOptionsCore",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public string PdbPath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.PdbPath\">\r\n    <summary>\r\n    Path of the PDB file or null if same as output binary path with .pdb extension.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.PdbPath",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.PdbPath\">\r\n    <summary>\r\n    Path of the PDB file or null if same as output binary path with .pdb extension.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public CultureInfo PreferredUILang",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.PreferredUILang\">\r\n    <summary>\r\n    Specify the preferred output language name.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.PreferredUILang",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.PreferredUILang\">\r\n    <summary>\r\n    Specify the preferred output language name.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public bool PrintFullPaths",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.PrintFullPaths\">\r\n    <summary>\r\n    If true, prints the full path of the file containing errors or\r\n    warnings in diagnostics.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.PrintFullPaths",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.PrintFullPaths\">\r\n    <summary>\r\n    If true, prints the full path of the file containing errors or\r\n    warnings in diagnostics.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<string> ReferencePaths",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ReferencePaths\">\r\n    <summary>\r\n    Sequence of absolute paths used to search for references.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.ReferencePaths",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ReferencePaths\">\r\n    <summary>\r\n    Sequence of absolute paths used to search for references.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<string> ScriptArguments",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ScriptArguments\">\r\n    <summary>\r\n    Arguments following script argument separator \"--\" or null if <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.IsInteractive\"/> is false.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.ScriptArguments",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.ScriptArguments\">\r\n    <summary>\r\n    Arguments following script argument separator \"--\" or null if <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.IsInteractive\"/> is false.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<CommandLineSourceFile> SourceFiles",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.SourceFiles\">\r\n    <summary>\r\n    Source file paths.\r\n    </summary>\r\n    <remarks>\r\n    Includes files specified directly on command line as well as files matching patterns specified \r\n    on command line using '*' and '?' wildcards or /recurse option.\r\n    </remarks>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.SourceFiles",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.SourceFiles\">\r\n    <summary>\r\n    Source file paths.\r\n    </summary>\r\n    <remarks>\r\n    Includes files specified directly on command line as well as files matching patterns specified \r\n    on command line using '*' and '?' wildcards or /recurse option.\r\n    </remarks>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string TouchedFilesPath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath\">\r\n    <summary>\r\n    Full path of a log of file paths accessed by the compiler, or null if file logging should be suppressed.\r\n    </summary>\r\n    <remarks>\r\n    Two log files will be created: \r\n    One with path <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath\"/> and extension \".read\" logging the files read,\r\n    and second with path <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath\"/> and extension \".write\" logging the files written to during compilation.\r\n    </remarks>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath\">\r\n    <summary>\r\n    Full path of a log of file paths accessed by the compiler, or null if file logging should be suppressed.\r\n    </summary>\r\n    <remarks>\r\n    Two log files will be created: \r\n    One with path <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath\"/> and extension \".read\" logging the files read,\r\n    and second with path <see cref=\"P:Microsoft.CodeAnalysis.CommandLineArguments.TouchedFilesPath\"/> and extension \".write\" logging the files written to during compilation.\r\n    </remarks>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public bool Utf8Output",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Utf8Output\">\r\n    <summary>\r\n    If true, use UTF8 for output.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.Utf8Output",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Utf8Output\">\r\n    <summary>\r\n    If true, use UTF8 for output.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string Win32Icon",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Icon\">\r\n    <summary>\r\n    The path to a .ico icon file.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Icon",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Icon\">\r\n    <summary>\r\n    The path to a .ico icon file.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string Win32Manifest",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Manifest\">\r\n    <summary>\r\n    The path to a Win32 manifest file to embed\r\n    into the output portable executable (PE) file.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Manifest",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32Manifest\">\r\n    <summary>\r\n    The path to a Win32 manifest file to embed\r\n    into the output portable executable (PE) file.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string Win32ResourceFile",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32ResourceFile\">\r\n    <summary>\r\n    The path to a Win32 resource.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineArguments.Win32ResourceFile",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineArguments.Win32ResourceFile\">\r\n    <summary>\r\n    The path to a Win32 resource.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public abstract class CommandLineArguments\r\n\r\n#endregion",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineArguments\">\r\n    <summary>\r\n    The base class for representing command line arguments to a\r\n    <see cref=\"T:Microsoft.CodeAnalysis.CommonCompiler\"/>.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.CommandLineArguments",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineArguments\">\r\n    <summary>\r\n    The base class for representing command line arguments to a\r\n    <see cref=\"T:Microsoft.CodeAnalysis.CommonCompiler\"/>.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\CommandLine\\CommonCommandLineParser.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Collections.Generic.IEnumerable{System.String} : args": "",
+                  "T:System.String : additionalReferencePaths": "",
+                  "T:System.String : baseDirectory": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.CommandLineArguments": ""
+                },
+                "Content": "public CommandLineArguments Parse(IEnumerable<string> args, string baseDirectory, string additionalReferencePaths)",
+                "XmlDocumentation": "",
+                "StartLine": 62
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Collections.Generic.IEnumerable{System.String} : args": "",
+                  "T:System.String : additionalReferencePaths": "",
+                  "T:System.String : baseDirectory": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.CommandLineArguments": ""
+                },
+                "Content": "public CommandLineArguments Parse(IEnumerable<string> args, string baseDirectory, string additionalReferencePaths)",
+                "XmlDocumentation": "",
+                "StartLine": 62
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineParser.Parse(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineParser",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Boolean : removeHashComments": "",
+                  "T:System.String : commandLine": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Generic.IEnumerable{System.String}": ""
+                },
+                "Content": "public static IEnumerable<string> SplitCommandLineIntoArguments(string commandLine, bool removeHashComments)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineParser.SplitCommandLineIntoArguments(System.String,System.Boolean)\">\r\n    <summary>\r\n    Split a command line by the same rules as Main would get the commands.\r\n    </summary>\r\n    <remarks>\r\n    Rules for command line parsing, according to MSDN:\r\n    \r\n    Arguments are delimited by white space, which is either a space or a tab.\r\n     \r\n    A string surrounded by double quotation marks (\"string\") is interpreted \r\n    as a single argument, regardless of white space contained within. \r\n    A quoted string can be embedded in an argument.\r\n     \r\n    A double quotation mark preceded by a backslash (\\\") is interpreted as a \r\n    literal double quotation mark character (\").\r\n     \r\n    Backslashes are interpreted literally, unless they immediately precede a \r\n    double quotation mark.\r\n     \r\n    If an even number of backslashes is followed by a double quotation mark, \r\n    one backslash is placed in the argv array for every pair of backslashes, \r\n    and the double quotation mark is interpreted as a string delimiter.\r\n     \r\n    If an odd number of backslashes is followed by a double quotation mark, \r\n    one backslash is placed in the argv array for every pair of backslashes, \r\n    and the double quotation mark is \"escaped\" by the remaining backslash, \r\n    causing a literal double quotation mark (\") to be placed in argv.\r\n    </remarks>\r\n</member>\r\n",
+                "StartLine": 444
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Boolean : removeHashComments": "",
+                  "T:System.String : commandLine": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Generic.IEnumerable{System.String}": ""
+                },
+                "Content": "public static IEnumerable<string> SplitCommandLineIntoArguments(string commandLine, bool removeHashComments)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineParser.SplitCommandLineIntoArguments(System.String,System.Boolean)\">\r\n    <summary>\r\n    Split a command line by the same rules as Main would get the commands.\r\n    </summary>\r\n    <remarks>\r\n    Rules for command line parsing, according to MSDN:\r\n    \r\n    Arguments are delimited by white space, which is either a space or a tab.\r\n     \r\n    A string surrounded by double quotation marks (\"string\") is interpreted \r\n    as a single argument, regardless of white space contained within. \r\n    A quoted string can be embedded in an argument.\r\n     \r\n    A double quotation mark preceded by a backslash (\\\") is interpreted as a \r\n    literal double quotation mark character (\").\r\n     \r\n    Backslashes are interpreted literally, unless they immediately precede a \r\n    double quotation mark.\r\n     \r\n    If an even number of backslashes is followed by a double quotation mark, \r\n    one backslash is placed in the argv array for every pair of backslashes, \r\n    and the double quotation mark is interpreted as a string delimiter.\r\n     \r\n    If an odd number of backslashes is followed by a double quotation mark, \r\n    one backslash is placed in the argv array for every pair of backslashes, \r\n    and the double quotation mark is \"escaped\" by the remaining backslash, \r\n    causing a literal double quotation mark (\") to be placed in argv.\r\n    </remarks>\r\n</member>\r\n",
+                "StartLine": 444
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineParser.SplitCommandLineIntoArguments(System.String,System.Boolean)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineParser",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.CommandLineParser.SplitCommandLineIntoArguments(System.String,System.Boolean)\">\r\n    <summary>\r\n    Split a command line by the same rules as Main would get the commands.\r\n    </summary>\r\n    <remarks>\r\n    Rules for command line parsing, according to MSDN:\r\n    \r\n    Arguments are delimited by white space, which is either a space or a tab.\r\n     \r\n    A string surrounded by double quotation marks (\"string\") is interpreted \r\n    as a single argument, regardless of white space contained within. \r\n    A quoted string can be embedded in an argument.\r\n     \r\n    A double quotation mark preceded by a backslash (\\\") is interpreted as a \r\n    literal double quotation mark character (\").\r\n     \r\n    Backslashes are interpreted literally, unless they immediately precede a \r\n    double quotation mark.\r\n     \r\n    If an even number of backslashes is followed by a double quotation mark, \r\n    one backslash is placed in the argv array for every pair of backslashes, \r\n    and the double quotation mark is interpreted as a string delimiter.\r\n     \r\n    If an odd number of backslashes is followed by a double quotation mark, \r\n    one backslash is placed in the argv array for every pair of backslashes, \r\n    and the double quotation mark is \"escaped\" by the remaining backslash, \r\n    causing a literal double quotation mark (\") to be placed in argv.\r\n    </remarks>\r\n</member>\r\n"
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public bool IsInteractive",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineParser.IsInteractive",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineParser",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "protected abstract string RegularFileExtension",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineParser.RegularFileExtension",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineParser",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "protected abstract string ScriptFileExtension",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineParser.ScriptFileExtension",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineParser",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public abstract class CommandLineParser",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:Microsoft.CodeAnalysis.CommandLineParser",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": ""
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\DesktopAssemblyIdentityComparer.cs",
+          "InheritanceHierarchy": [
+            "!:System.Object",
+            "T:Microsoft.CodeAnalysis.AssemblyIdentityComparer"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.IO.Stream : input": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer": ""
+                },
+                "Content": "public static DesktopAssemblyIdentityComparer LoadFromXml(Stream input)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer.LoadFromXml(System.IO.Stream)\">\r\n    <summary>\r\n    Loads <see cref=\"T:Microsoft.CodeAnalysis.AssemblyPortabilityPolicy\"/> information from XML with App.config schema.\r\n    </summary>\r\n    <exception cref=\"T:System.Xml.XmlException\">The stream doesn't contain a well formed XML.</exception>\r\n    <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"input\"/> is null.</exception>\r\n    <remarks>\r\n    Tries to find supportPortability elements in the given XML:\r\n    <![CDATA[\r\n    <configuration>\r\n       <runtime>\r\n          <assemblyBinding xmlns=\"urn:schemas-microsoft-com:asm.v1\">\r\n             <supportPortability PKT=\"7cec85d7bea7798e\" enable=\"false\"/>\r\n             <supportPortability PKT=\"31bf3856ad364e35\" enable=\"false\"/>\r\n          </assemblyBinding>\r\n       </runtime>\r\n    </configuration>\r\n    ]]>\r\n    \r\n    Keeps the stream open.\r\n    </remarks>\r\n</member>\r\n",
+                "StartLine": 66
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.IO.Stream : input": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer": ""
+                },
+                "Content": "public static DesktopAssemblyIdentityComparer LoadFromXml(Stream input)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer.LoadFromXml(System.IO.Stream)\">\r\n    <summary>\r\n    Loads <see cref=\"T:Microsoft.CodeAnalysis.AssemblyPortabilityPolicy\"/> information from XML with App.config schema.\r\n    </summary>\r\n    <exception cref=\"T:System.Xml.XmlException\">The stream doesn't contain a well formed XML.</exception>\r\n    <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"input\"/> is null.</exception>\r\n    <remarks>\r\n    Tries to find supportPortability elements in the given XML:\r\n    <![CDATA[\r\n    <configuration>\r\n       <runtime>\r\n          <assemblyBinding xmlns=\"urn:schemas-microsoft-com:asm.v1\">\r\n             <supportPortability PKT=\"7cec85d7bea7798e\" enable=\"false\"/>\r\n             <supportPortability PKT=\"31bf3856ad364e35\" enable=\"false\"/>\r\n          </assemblyBinding>\r\n       </runtime>\r\n    </configuration>\r\n    ]]>\r\n    \r\n    Keeps the stream open.\r\n    </remarks>\r\n</member>\r\n",
+                "StartLine": 66
+              },
+              "Id": "M:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer.LoadFromXml(System.IO.Stream)",
+              "Parent": "T:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer.LoadFromXml(System.IO.Stream)\">\r\n    <summary>\r\n    Loads <see cref=\"T:Microsoft.CodeAnalysis.AssemblyPortabilityPolicy\"/> information from XML with App.config schema.\r\n    </summary>\r\n    <exception cref=\"T:System.Xml.XmlException\">The stream doesn't contain a well formed XML.</exception>\r\n    <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"input\"/> is null.</exception>\r\n    <remarks>\r\n    Tries to find supportPortability elements in the given XML:\r\n    <![CDATA[\r\n    <configuration>\r\n       <runtime>\r\n          <assemblyBinding xmlns=\"urn:schemas-microsoft-com:asm.v1\">\r\n             <supportPortability PKT=\"7cec85d7bea7798e\" enable=\"false\"/>\r\n             <supportPortability PKT=\"31bf3856ad364e35\" enable=\"false\"/>\r\n          </assemblyBinding>\r\n       </runtime>\r\n    </configuration>\r\n    ]]>\r\n    \r\n    Keeps the stream open.\r\n    </remarks>\r\n</member>\r\n"
+            }
+          ],
+          "Fields": [
+            {
+              "Syntax": {
+                "Content": "Default",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer.Default",
+              "Parent": "T:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public sealed partial class DesktopAssemblyIdentityComparer",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:Microsoft.CodeAnalysis.DesktopAssemblyIdentityComparer",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": ""
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\DesktopStrongNameProvider.cs",
+          "InheritanceHierarchy": [
+            "!:System.Object",
+            "T:Microsoft.CodeAnalysis.StrongNameProvider"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 409
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 409
+              },
+              "Id": "M:Microsoft.CodeAnalysis.DesktopStrongNameProvider.Equals(System.Object)",
+              "Parent": "T:Microsoft.CodeAnalysis.DesktopStrongNameProvider",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 421
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 421
+              },
+              "Id": "M:Microsoft.CodeAnalysis.DesktopStrongNameProvider.GetHashCode",
+              "Parent": "T:Microsoft.CodeAnalysis.DesktopStrongNameProvider",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.Collections.Immutable.ImmutableArray{System.String} : keyFileSearchPaths": ""
+                },
+                "Content": "public DesktopStrongNameProvider(ImmutableArray<string> keyFileSearchPaths = default (ImmutableArray<string>))",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.DesktopStrongNameProvider.#ctor(System.Collections.Immutable.ImmutableArray{System.String})\">\r\n    <summary>\r\n    Creates an instance of <see cref=\"T:Microsoft.CodeAnalysis.DesktopStrongNameProvider\"/>.\r\n    </summary>\r\n    <param name=\"keyFileSearchPaths\">\r\n    An ordered set of fully qualified paths which are searched when locating a cryptographic key file.\r\n    </param>\r\n</member>\r\n",
+                "StartLine": 53
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Collections.Immutable.ImmutableArray{System.String} : keyFileSearchPaths": ""
+                },
+                "Content": "public DesktopStrongNameProvider(ImmutableArray<string> keyFileSearchPaths = default (ImmutableArray<string>))",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.DesktopStrongNameProvider.#ctor(System.Collections.Immutable.ImmutableArray{System.String})\">\r\n    <summary>\r\n    Creates an instance of <see cref=\"T:Microsoft.CodeAnalysis.DesktopStrongNameProvider\"/>.\r\n    </summary>\r\n    <param name=\"keyFileSearchPaths\">\r\n    An ordered set of fully qualified paths which are searched when locating a cryptographic key file.\r\n    </param>\r\n</member>\r\n",
+                "StartLine": 53
+              },
+              "Id": "M:Microsoft.CodeAnalysis.DesktopStrongNameProvider.#ctor(System.Collections.Immutable.ImmutableArray{System.String})",
+              "Parent": "T:Microsoft.CodeAnalysis.DesktopStrongNameProvider",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.DesktopStrongNameProvider.#ctor(System.Collections.Immutable.ImmutableArray{System.String})\">\r\n    <summary>\r\n    Creates an instance of <see cref=\"T:Microsoft.CodeAnalysis.DesktopStrongNameProvider\"/>.\r\n    </summary>\r\n    <param name=\"keyFileSearchPaths\">\r\n    An ordered set of fully qualified paths which are searched when locating a cryptographic key file.\r\n    </param>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public class DesktopStrongNameProvider",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.DesktopStrongNameProvider\">\r\n    <summary>\r\n    Provides strong name and signs source assemblies.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.DesktopStrongNameProvider",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.DesktopStrongNameProvider\">\r\n    <summary>\r\n    Provides strong name and signs source assemblies.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\FileSystemExtensions.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.Compilation : compilation": "",
+                  "T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription} : manifestResources": "",
+                  "T:System.String : outputPath": "",
+                  "T:System.String : pdbPath": "",
+                  "T:System.String : win32ResourcesPath": "",
+                  "T:System.String : xmlDocPath": "",
+                  "T:System.Threading.CancellationToken : cancellationToken": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.Emit.EmitResult": ""
+                },
+                "Content": "public static EmitResult Emit(this Compilation compilation, string outputPath, string pdbPath = null, string xmlDocPath = null, string win32ResourcesPath = null, IEnumerable<ResourceDescription> manifestResources = null, CancellationToken cancellationToken = default (CancellationToken))",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.FileSystemExtensions.Emit(Microsoft.CodeAnalysis.Compilation,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription},System.Threading.CancellationToken)\">\r\n    <summary>\r\n    Emit the IL for the compilation into the specified stream.\r\n    </summary>\r\n    <param name=\"compilation\">Compilation.</param>\r\n    <param name=\"outputPath\">Path of the file to which the compilation will be written.</param>\r\n    <param name=\"pdbPath\">Path of the file to which the compilation's debug info will be written.\r\n    Also embedded in the output file.  Null to forego PDB generation.\r\n    </param>\r\n    <param name=\"xmlDocPath\">Path of the file to which the compilation's XML documentation will be written.  Null to forego XML generation.</param>\r\n    <param name=\"win32ResourcesPath\">Path of the file from which the compilation's Win32 resources will be read (in RES format).  \r\n    Null to indicate that there are none.</param>\r\n    <param name=\"manifestResources\">List of the compilation's managed resources.  Null to indicate that there are none.</param>\r\n    <param name=\"cancellationToken\">To cancel the emit process.</param>\r\n    <exception cref=\"T:System.ArgumentNullException\">Compilation or path is null.</exception>\r\n    <exception cref=\"T:System.ArgumentException\">Path is empty or invalid.</exception>\r\n    <exception cref=\"T:System.IO.IOException\">An error occurred while reading or writing a file.</exception>\r\n</member>\r\n",
+                "StartLine": 29
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.Compilation : compilation": "",
+                  "T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription} : manifestResources": "",
+                  "T:System.String : outputPath": "",
+                  "T:System.String : pdbPath": "",
+                  "T:System.String : win32ResourcesPath": "",
+                  "T:System.String : xmlDocPath": "",
+                  "T:System.Threading.CancellationToken : cancellationToken": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.Emit.EmitResult": ""
+                },
+                "Content": "public static EmitResult Emit(this Compilation compilation, string outputPath, string pdbPath = null, string xmlDocPath = null, string win32ResourcesPath = null, IEnumerable<ResourceDescription> manifestResources = null, CancellationToken cancellationToken = default (CancellationToken))",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.FileSystemExtensions.Emit(Microsoft.CodeAnalysis.Compilation,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription},System.Threading.CancellationToken)\">\r\n    <summary>\r\n    Emit the IL for the compilation into the specified stream.\r\n    </summary>\r\n    <param name=\"compilation\">Compilation.</param>\r\n    <param name=\"outputPath\">Path of the file to which the compilation will be written.</param>\r\n    <param name=\"pdbPath\">Path of the file to which the compilation's debug info will be written.\r\n    Also embedded in the output file.  Null to forego PDB generation.\r\n    </param>\r\n    <param name=\"xmlDocPath\">Path of the file to which the compilation's XML documentation will be written.  Null to forego XML generation.</param>\r\n    <param name=\"win32ResourcesPath\">Path of the file from which the compilation's Win32 resources will be read (in RES format).  \r\n    Null to indicate that there are none.</param>\r\n    <param name=\"manifestResources\">List of the compilation's managed resources.  Null to indicate that there are none.</param>\r\n    <param name=\"cancellationToken\">To cancel the emit process.</param>\r\n    <exception cref=\"T:System.ArgumentNullException\">Compilation or path is null.</exception>\r\n    <exception cref=\"T:System.ArgumentException\">Path is empty or invalid.</exception>\r\n    <exception cref=\"T:System.IO.IOException\">An error occurred while reading or writing a file.</exception>\r\n</member>\r\n",
+                "StartLine": 29
+              },
+              "Id": "M:Microsoft.CodeAnalysis.FileSystemExtensions.Emit(Microsoft.CodeAnalysis.Compilation,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription},System.Threading.CancellationToken)",
+              "Parent": "T:Microsoft.CodeAnalysis.FileSystemExtensions",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.FileSystemExtensions.Emit(Microsoft.CodeAnalysis.Compilation,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription},System.Threading.CancellationToken)\">\r\n    <summary>\r\n    Emit the IL for the compilation into the specified stream.\r\n    </summary>\r\n    <param name=\"compilation\">Compilation.</param>\r\n    <param name=\"outputPath\">Path of the file to which the compilation will be written.</param>\r\n    <param name=\"pdbPath\">Path of the file to which the compilation's debug info will be written.\r\n    Also embedded in the output file.  Null to forego PDB generation.\r\n    </param>\r\n    <param name=\"xmlDocPath\">Path of the file to which the compilation's XML documentation will be written.  Null to forego XML generation.</param>\r\n    <param name=\"win32ResourcesPath\">Path of the file from which the compilation's Win32 resources will be read (in RES format).  \r\n    Null to indicate that there are none.</param>\r\n    <param name=\"manifestResources\">List of the compilation's managed resources.  Null to indicate that there are none.</param>\r\n    <param name=\"cancellationToken\">To cancel the emit process.</param>\r\n    <exception cref=\"T:System.ArgumentNullException\">Compilation or path is null.</exception>\r\n    <exception cref=\"T:System.ArgumentException\">Path is empty or invalid.</exception>\r\n    <exception cref=\"T:System.IO.IOException\">An error occurred while reading or writing a file.</exception>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public static class FileSystemExtensions",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:Microsoft.CodeAnalysis.FileSystemExtensions",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": ""
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\CommandLine\\RuleSet\\RuleSet.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Collections.Generic.Dictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic} : specificDiagnosticOptions": "",
+                  "T:System.String : rulesetFileFullPath": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic": ""
+                },
+                "Content": "public static ReportDiagnostic GetDiagnosticOptionsFromRulesetFile(string rulesetFileFullPath, out Dictionary<string, ReportDiagnostic> specificDiagnosticOptions)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.GetDiagnosticOptionsFromRulesetFile(System.String,System.Collections.Generic.Dictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}@)\">\r\n    <summary>\r\n    Parses the ruleset file at the given <paramref name=\"rulesetFileFullPath\"/> and returns the following diagnostic options from the parsed file:\r\n    1) A map of <paramref name=\"specificDiagnosticOptions\"/> from rule ID to <see cref=\"T:Microsoft.CodeAnalysis.ReportDiagnostic\"/> option.\r\n    2) A global <see cref=\"T:Microsoft.CodeAnalysis.ReportDiagnostic\"/> option for all rules in the ruleset file.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 284
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Collections.Generic.Dictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic} : specificDiagnosticOptions": "",
+                  "T:System.String : rulesetFileFullPath": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic": ""
+                },
+                "Content": "public static ReportDiagnostic GetDiagnosticOptionsFromRulesetFile(string rulesetFileFullPath, out Dictionary<string, ReportDiagnostic> specificDiagnosticOptions)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.GetDiagnosticOptionsFromRulesetFile(System.String,System.Collections.Generic.Dictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}@)\">\r\n    <summary>\r\n    Parses the ruleset file at the given <paramref name=\"rulesetFileFullPath\"/> and returns the following diagnostic options from the parsed file:\r\n    1) A map of <paramref name=\"specificDiagnosticOptions\"/> from rule ID to <see cref=\"T:Microsoft.CodeAnalysis.ReportDiagnostic\"/> option.\r\n    2) A global <see cref=\"T:Microsoft.CodeAnalysis.ReportDiagnostic\"/> option for all rules in the ruleset file.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 284
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSet.GetDiagnosticOptionsFromRulesetFile(System.String,System.Collections.Generic.Dictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}@)",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.GetDiagnosticOptionsFromRulesetFile(System.String,System.Collections.Generic.Dictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}@)\">\r\n    <summary>\r\n    Parses the ruleset file at the given <paramref name=\"rulesetFileFullPath\"/> and returns the following diagnostic options from the parsed file:\r\n    1) A map of <paramref name=\"specificDiagnosticOptions\"/> from rule ID to <see cref=\"T:Microsoft.CodeAnalysis.ReportDiagnostic\"/> option.\r\n    2) A global <see cref=\"T:Microsoft.CodeAnalysis.ReportDiagnostic\"/> option for all rules in the ruleset file.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : filePath": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Immutable.ImmutableArray{System.String}": ""
+                },
+                "Content": "public static ImmutableArray<string> GetEffectiveIncludesFromFile(string filePath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)\">\r\n    <summary>\r\n    Get the paths to all files contributing rules to the ruleset from the specified file.\r\n    See also: <seealso cref=\"M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)\" />.\r\n    </summary>\r\n    <returns>\r\n    The full paths to included files, or an empty array if there were errors.\r\n    </returns>\r\n</member>\r\n",
+                "StartLine": 268
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : filePath": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Immutable.ImmutableArray{System.String}": ""
+                },
+                "Content": "public static ImmutableArray<string> GetEffectiveIncludesFromFile(string filePath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)\">\r\n    <summary>\r\n    Get the paths to all files contributing rules to the ruleset from the specified file.\r\n    See also: <seealso cref=\"M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)\" />.\r\n    </summary>\r\n    <returns>\r\n    The full paths to included files, or an empty array if there were errors.\r\n    </returns>\r\n</member>\r\n",
+                "StartLine": 268
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)\">\r\n    <summary>\r\n    Get the paths to all files contributing rules to the ruleset from the specified file.\r\n    See also: <seealso cref=\"M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)\" />.\r\n    </summary>\r\n    <returns>\r\n    The full paths to included files, or an empty array if there were errors.\r\n    </returns>\r\n</member>\r\n"
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : filePath": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.RuleSet": ""
+                },
+                "Content": "public static RuleSet LoadEffectiveRuleSetFromFile(string filePath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)\">\r\n    <summary>\r\n    Load the ruleset from the specified file. This ruleset will contain\r\n    all the rules resolved from the includes specified in the ruleset file\r\n    as well. See also: <seealso cref=\"M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)\" />.\r\n    </summary>\r\n    <returns>\r\n    A ruleset that contains resolved rules or null if there were errors.\r\n    </returns>\r\n</member>\r\n",
+                "StartLine": 250
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : filePath": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.RuleSet": ""
+                },
+                "Content": "public static RuleSet LoadEffectiveRuleSetFromFile(string filePath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)\">\r\n    <summary>\r\n    Load the ruleset from the specified file. This ruleset will contain\r\n    all the rules resolved from the includes specified in the ruleset file\r\n    as well. See also: <seealso cref=\"M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)\" />.\r\n    </summary>\r\n    <returns>\r\n    A ruleset that contains resolved rules or null if there were errors.\r\n    </returns>\r\n</member>\r\n",
+                "StartLine": 250
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.LoadEffectiveRuleSetFromFile(System.String)\">\r\n    <summary>\r\n    Load the ruleset from the specified file. This ruleset will contain\r\n    all the rules resolved from the includes specified in the ruleset file\r\n    as well. See also: <seealso cref=\"M:Microsoft.CodeAnalysis.RuleSet.GetEffectiveIncludesFromFile(System.String)\" />.\r\n    </summary>\r\n    <returns>\r\n    A ruleset that contains resolved rules or null if there were errors.\r\n    </returns>\r\n</member>\r\n"
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic : action": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.RuleSet": ""
+                },
+                "Content": "public RuleSet WithEffectiveAction(ReportDiagnostic action)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.WithEffectiveAction(Microsoft.CodeAnalysis.ReportDiagnostic)\">\r\n    <summary>\r\n    Create a RuleSet with a global effective action applied on it.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 67
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic : action": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.RuleSet": ""
+                },
+                "Content": "public RuleSet WithEffectiveAction(ReportDiagnostic action)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.WithEffectiveAction(Microsoft.CodeAnalysis.ReportDiagnostic)\">\r\n    <summary>\r\n    Create a RuleSet with a global effective action applied on it.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 67
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSet.WithEffectiveAction(Microsoft.CodeAnalysis.ReportDiagnostic)",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.WithEffectiveAction(Microsoft.CodeAnalysis.ReportDiagnostic)\">\r\n    <summary>\r\n    Create a RuleSet with a global effective action applied on it.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public string FilePath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.FilePath\">\r\n    <summary>\r\n    The file path of the ruleset file.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.RuleSet.FilePath",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.FilePath\">\r\n    <summary>\r\n    The file path of the ruleset file.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ReportDiagnostic GeneralDiagnosticOption",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.GeneralDiagnosticOption\">\r\n    <summary>\r\n    The global option specified by the IncludeAll tag.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.RuleSet.GeneralDiagnosticOption",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.GeneralDiagnosticOption\">\r\n    <summary>\r\n    The global option specified by the IncludeAll tag.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<RuleSetInclude> Includes",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.Includes\">\r\n    <summary>\r\n    List of rulesets included by this ruleset.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.RuleSet.Includes",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.Includes\">\r\n    <summary>\r\n    List of rulesets included by this ruleset.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableDictionary<string, ReportDiagnostic> SpecificDiagnosticOptions",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.SpecificDiagnosticOptions\">\r\n    <summary>\r\n    Individual ruleids and their associated actions.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.RuleSet.SpecificDiagnosticOptions",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSet.SpecificDiagnosticOptions\">\r\n    <summary>\r\n    Individual ruleids and their associated actions.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic : generalOption": "",
+                  "T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.RuleSetInclude} : includes": "",
+                  "T:System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic} : specificOptions": "",
+                  "T:System.String : filePath": ""
+                },
+                "Content": "public RuleSet(string filePath, ReportDiagnostic generalOption, ImmutableDictionary<string, ReportDiagnostic> specificOptions, ImmutableArray<RuleSetInclude> includes)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic,System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.RuleSetInclude})\">\r\n    <summary>\r\n    Create a RuleSet.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 56
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic : generalOption": "",
+                  "T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.RuleSetInclude} : includes": "",
+                  "T:System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic} : specificOptions": "",
+                  "T:System.String : filePath": ""
+                },
+                "Content": "public RuleSet(string filePath, ReportDiagnostic generalOption, ImmutableDictionary<string, ReportDiagnostic> specificOptions, ImmutableArray<RuleSetInclude> includes)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic,System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.RuleSetInclude})\">\r\n    <summary>\r\n    Create a RuleSet.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 56
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSet.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic,System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.RuleSetInclude})",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSet",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSet.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic,System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.RuleSetInclude})\">\r\n    <summary>\r\n    Create a RuleSet.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public class RuleSet",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.RuleSet\">\r\n    <summary>\r\n    Represents a set of rules as specified in a rulset file.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.RuleSet",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.RuleSet\">\r\n    <summary>\r\n    Represents a set of rules as specified in a rulset file.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\CommandLine\\RuleSet\\RuleSetInclude.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.RuleSet : parent": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.RuleSet": ""
+                },
+                "Content": "public RuleSet LoadRuleSet(RuleSet parent)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSetInclude.LoadRuleSet(Microsoft.CodeAnalysis.RuleSet)\">\r\n    <summary>\r\n    Gets the RuleSet associated with this ruleset include\r\n    </summary>\r\n    <param name=\"parent\">The parent of this ruleset include</param>\r\n</member>\r\n",
+                "StartLine": 47
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.RuleSet : parent": ""
+                },
+                "Returns": {
+                  "T:Microsoft.CodeAnalysis.RuleSet": ""
+                },
+                "Content": "public RuleSet LoadRuleSet(RuleSet parent)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSetInclude.LoadRuleSet(Microsoft.CodeAnalysis.RuleSet)\">\r\n    <summary>\r\n    Gets the RuleSet associated with this ruleset include\r\n    </summary>\r\n    <param name=\"parent\">The parent of this ruleset include</param>\r\n</member>\r\n",
+                "StartLine": 47
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSetInclude.LoadRuleSet(Microsoft.CodeAnalysis.RuleSet)",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSetInclude",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSetInclude.LoadRuleSet(Microsoft.CodeAnalysis.RuleSet)\">\r\n    <summary>\r\n    Gets the RuleSet associated with this ruleset include\r\n    </summary>\r\n    <param name=\"parent\">The parent of this ruleset include</param>\r\n</member>\r\n"
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public ReportDiagnostic Action",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSetInclude.Action\">\r\n    <summary>\r\n    The effective action to apply on this included ruleset.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.RuleSetInclude.Action",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSetInclude",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSetInclude.Action\">\r\n    <summary>\r\n    The effective action to apply on this included ruleset.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string IncludePath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSetInclude.IncludePath\">\r\n    <summary>\r\n    The path of the included file.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.RuleSetInclude.IncludePath",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSetInclude",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.RuleSetInclude.IncludePath\">\r\n    <summary>\r\n    The path of the included file.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic : action": "",
+                  "T:System.String : includePath": ""
+                },
+                "Content": "public RuleSetInclude(string includePath, ReportDiagnostic action)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSetInclude.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic)\">\r\n    <summary>\r\n    Create a RuleSetInclude given the includepath and the effective action.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 37
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ReportDiagnostic : action": "",
+                  "T:System.String : includePath": ""
+                },
+                "Content": "public RuleSetInclude(string includePath, ReportDiagnostic action)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSetInclude.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic)\">\r\n    <summary>\r\n    Create a RuleSetInclude given the includepath and the effective action.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 37
+              },
+              "Id": "M:Microsoft.CodeAnalysis.RuleSetInclude.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic)",
+              "Parent": "T:Microsoft.CodeAnalysis.RuleSetInclude",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.RuleSetInclude.#ctor(System.String,Microsoft.CodeAnalysis.ReportDiagnostic)\">\r\n    <summary>\r\n    Create a RuleSetInclude given the includepath and the effective action.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public class RuleSetInclude",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.RuleSetInclude\">\r\n    <summary>\r\n    Represents a Include tag in a RuleSet file.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.RuleSetInclude",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.RuleSetInclude\">\r\n    <summary>\r\n    Represents a Include tag in a RuleSet file.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\SerializableCompilationOptions.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.CompilationOptions : options": "",
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "protected static void CommonGetObjectData(CompilationOptions options, SerializationInfo info, StreamingContext context)",
+                "XmlDocumentation": "",
+                "StartLine": 38
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.CompilationOptions : options": "",
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "protected static void CommonGetObjectData(CompilationOptions options, SerializationInfo info, StreamingContext context)",
+                "XmlDocumentation": "",
+                "StartLine": 38
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SerializableCompilationOptions.CommonGetObjectData(Microsoft.CodeAnalysis.CompilationOptions,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "public abstract void GetObjectData(SerializationInfo info, StreamingContext context);",
+                "XmlDocumentation": "",
+                "StartLine": 62
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "public abstract void GetObjectData(SerializationInfo info, StreamingContext context);",
+                "XmlDocumentation": "",
+                "StartLine": 62
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SerializableCompilationOptions.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Fields": [
+            {
+              "Syntax": {
+                "Content": "CheckOverflowString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.CheckOverflowString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "ConcurrentBuildString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.ConcurrentBuildString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "CryptoKeyContainerString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.CryptoKeyContainerString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "CryptoKeyFileString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.CryptoKeyFileString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "DebugInformationKindString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.DebugInformationKindString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "DelaySignString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.DelaySignString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "FeaturesString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.FeaturesString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "GeneralDiagnosticOptionString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.GeneralDiagnosticOptionString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "MainTypeNameString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.MainTypeNameString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "MetadataImportOptionsString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.MetadataImportOptionsString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "ModuleNameString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.ModuleNameString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "OptimizeString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.OptimizeString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "OutputKindString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.OutputKindString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "PlatformString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.PlatformString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "ScriptClassNameString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.ScriptClassNameString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "SpecificDiagnosticOptionsString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.SpecificDiagnosticOptionsString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "WarningLevelString",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SerializableCompilationOptions.WarningLevelString",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "protected abstract CompilationOptions CommonOptions",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.SerializableCompilationOptions.CommonOptions",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public CompilationOptions Options",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.SerializableCompilationOptions.Options",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public abstract class SerializableCompilationOptions",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.SerializableCompilationOptions\">\r\n    <summary>\r\n    Represents compilation options common to C# and VB.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.SerializableCompilationOptions",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.SerializableCompilationOptions\">\r\n    <summary>\r\n    Represents compilation options common to C# and VB.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\SerializableParseOptions.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ParseOptions : options": "",
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "protected static void CommonGetObjectData(ParseOptions options, SerializationInfo info, StreamingContext context)",
+                "XmlDocumentation": "",
+                "StartLine": 22
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.ParseOptions : options": "",
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "protected static void CommonGetObjectData(ParseOptions options, SerializationInfo info, StreamingContext context)",
+                "XmlDocumentation": "",
+                "StartLine": 22
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SerializableParseOptions.CommonGetObjectData(Microsoft.CodeAnalysis.ParseOptions,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableParseOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "public abstract void GetObjectData(SerializationInfo info, StreamingContext context);",
+                "XmlDocumentation": "",
+                "StartLine": 20
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Runtime.Serialization.SerializationInfo : info": "",
+                  "T:System.Runtime.Serialization.StreamingContext : context": ""
+                },
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "public abstract void GetObjectData(SerializationInfo info, StreamingContext context);",
+                "XmlDocumentation": "",
+                "StartLine": 20
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SerializableParseOptions.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableParseOptions",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "protected abstract ParseOptions CommonOptions",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.SerializableParseOptions.CommonOptions",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableParseOptions",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public ParseOptions Options",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.SerializableParseOptions.Options",
+              "Parent": "T:Microsoft.CodeAnalysis.SerializableParseOptions",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public abstract class SerializableParseOptions",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.SerializableParseOptions\">\r\n    <summary>\r\n    Represents parse options common to C# and VB.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.SerializableParseOptions",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.SerializableParseOptions\">\r\n    <summary>\r\n    Represents parse options common to C# and VB.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\SourceFileResolver.cs",
+          "InheritanceHierarchy": [
+            "!:System.Object",
+            "T:Microsoft.CodeAnalysis.SourceReferenceResolver"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 81
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 81
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.Equals(System.Object)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "protected virtual bool FileExists(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 76
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "protected virtual bool FileExists(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 76
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.FileExists(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 94
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 94
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.GetHashCode",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : baseFilePath": "",
+                  "T:System.String : path": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public override string NormalizePath(string path, string baseFilePath)",
+                "XmlDocumentation": "",
+                "StartLine": 53
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : baseFilePath": "",
+                  "T:System.String : path": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public override string NormalizePath(string path, string baseFilePath)",
+                "XmlDocumentation": "",
+                "StartLine": 53
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.NormalizePath(System.String,System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.IO.Stream": ""
+                },
+                "Content": "public override Stream OpenRead(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 70
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.IO.Stream": ""
+                },
+                "Content": "public override Stream OpenRead(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 70
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.OpenRead(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : baseFilePath": "",
+                  "T:System.String : path": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public override string ResolveReference(string path, string baseFilePath)",
+                "XmlDocumentation": "",
+                "StartLine": 58
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : baseFilePath": "",
+                  "T:System.String : path": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public override string ResolveReference(string path, string baseFilePath)",
+                "XmlDocumentation": "",
+                "StartLine": 58
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.ResolveReference(System.String,System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Fields": [
+            {
+              "Syntax": {
+                "Content": "Default",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.SourceFileResolver.Default",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public string BaseDirectory",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.SourceFileResolver.BaseDirectory",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public ImmutableArray<string> SearchPaths",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.SourceFileResolver.SearchPaths",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.Collections.Generic.IEnumerable{System.String} : searchPaths": "",
+                  "T:System.String : baseDirectory": ""
+                },
+                "Content": "public SourceFileResolver(IEnumerable<string> searchPaths, string baseDirectory): this (searchPaths.AsImmutableOrNull(), baseDirectory)",
+                "XmlDocumentation": "",
+                "StartLine": 22
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Collections.Generic.IEnumerable{System.String} : searchPaths": "",
+                  "T:System.String : baseDirectory": ""
+                },
+                "Content": "public SourceFileResolver(IEnumerable<string> searchPaths, string baseDirectory): this (searchPaths.AsImmutableOrNull(), baseDirectory)",
+                "XmlDocumentation": "",
+                "StartLine": 22
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.#ctor(System.Collections.Generic.IEnumerable{System.String},System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.Collections.Immutable.ImmutableArray{System.String} : searchPaths": "",
+                  "T:System.String : baseDirectory": ""
+                },
+                "Content": "public SourceFileResolver(ImmutableArray<string> searchPaths, string baseDirectory)",
+                "XmlDocumentation": "",
+                "StartLine": 27
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Collections.Immutable.ImmutableArray{System.String} : searchPaths": "",
+                  "T:System.String : baseDirectory": ""
+                },
+                "Content": "public SourceFileResolver(ImmutableArray<string> searchPaths, string baseDirectory)",
+                "XmlDocumentation": "",
+                "StartLine": 27
+              },
+              "Id": "M:Microsoft.CodeAnalysis.SourceFileResolver.#ctor(System.Collections.Immutable.ImmutableArray{System.String},System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public class SourceFileResolver",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.SourceFileResolver\">\r\n    <summary>\r\n    Resolves references to source files specified in source code.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.SourceFileResolver",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.SourceFileResolver\">\r\n    <summary>\r\n    Resolves references to source files specified in source code.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\XmlFileResolver.cs",
+          "InheritanceHierarchy": [
+            "!:System.Object",
+            "T:Microsoft.CodeAnalysis.XmlReferenceResolver"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 86
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 86
+              },
+              "Id": "M:Microsoft.CodeAnalysis.XmlFileResolver.Equals(System.Object)",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "protected virtual bool FileExists(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 81
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "protected virtual bool FileExists(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 81
+              },
+              "Id": "M:Microsoft.CodeAnalysis.XmlFileResolver.FileExists(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 98
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 98
+              },
+              "Id": "M:Microsoft.CodeAnalysis.XmlFileResolver.GetHashCode",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.IO.Stream": ""
+                },
+                "Content": "public override Stream OpenRead(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 75
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : resolvedPath": ""
+                },
+                "Returns": {
+                  "T:System.IO.Stream": ""
+                },
+                "Content": "public override Stream OpenRead(string resolvedPath)",
+                "XmlDocumentation": "",
+                "StartLine": 75
+              },
+              "Id": "M:Microsoft.CodeAnalysis.XmlFileResolver.OpenRead(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : baseFilePath": "",
+                  "T:System.String : path": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public override string ResolveReference(string path, string baseFilePath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.XmlFileResolver.ResolveReference(System.String,System.String)\">\r\n    <summary>\r\n    Resolves XML document file path.\r\n    </summary>\r\n    <param name=\"path\">\r\n    Value of the \"file\" attribute of an &lt;include&gt; documentation comment element.\r\n    </param>\r\n    <param name=\"baseFilePath\">\r\n    Path of the source file (<see cref=\"P:Microsoft.CodeAnalysis.SyntaxTree.FilePath\"/>) or XML document that contains the <paramref name=\"path\"/>.\r\n    If not null used as a base path of <paramref name=\"path\"/>, if <paramref name=\"path\"/> is relative.\r\n    If <paramref name=\"baseFilePath\"/> is relative <see cref=\"P:Microsoft.CodeAnalysis.XmlFileResolver.BaseDirectory\"/> is used as the base path of <paramref name=\"baseFilePath\"/>.\r\n    </param>\r\n    <returns>Normalized XML document file path or null if not found.</returns>\r\n</member>\r\n",
+                "StartLine": 45
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : baseFilePath": "",
+                  "T:System.String : path": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public override string ResolveReference(string path, string baseFilePath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.XmlFileResolver.ResolveReference(System.String,System.String)\">\r\n    <summary>\r\n    Resolves XML document file path.\r\n    </summary>\r\n    <param name=\"path\">\r\n    Value of the \"file\" attribute of an &lt;include&gt; documentation comment element.\r\n    </param>\r\n    <param name=\"baseFilePath\">\r\n    Path of the source file (<see cref=\"P:Microsoft.CodeAnalysis.SyntaxTree.FilePath\"/>) or XML document that contains the <paramref name=\"path\"/>.\r\n    If not null used as a base path of <paramref name=\"path\"/>, if <paramref name=\"path\"/> is relative.\r\n    If <paramref name=\"baseFilePath\"/> is relative <see cref=\"P:Microsoft.CodeAnalysis.XmlFileResolver.BaseDirectory\"/> is used as the base path of <paramref name=\"baseFilePath\"/>.\r\n    </param>\r\n    <returns>Normalized XML document file path or null if not found.</returns>\r\n</member>\r\n",
+                "StartLine": 45
+              },
+              "Id": "M:Microsoft.CodeAnalysis.XmlFileResolver.ResolveReference(System.String,System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.XmlFileResolver.ResolveReference(System.String,System.String)\">\r\n    <summary>\r\n    Resolves XML document file path.\r\n    </summary>\r\n    <param name=\"path\">\r\n    Value of the \"file\" attribute of an &lt;include&gt; documentation comment element.\r\n    </param>\r\n    <param name=\"baseFilePath\">\r\n    Path of the source file (<see cref=\"P:Microsoft.CodeAnalysis.SyntaxTree.FilePath\"/>) or XML document that contains the <paramref name=\"path\"/>.\r\n    If not null used as a base path of <paramref name=\"path\"/>, if <paramref name=\"path\"/> is relative.\r\n    If <paramref name=\"baseFilePath\"/> is relative <see cref=\"P:Microsoft.CodeAnalysis.XmlFileResolver.BaseDirectory\"/> is used as the base path of <paramref name=\"baseFilePath\"/>.\r\n    </param>\r\n    <returns>Normalized XML document file path or null if not found.</returns>\r\n</member>\r\n"
+            }
+          ],
+          "Fields": [
+            {
+              "Syntax": {
+                "Content": "Default",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.XmlFileResolver.Default",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public string BaseDirectory",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.XmlFileResolver.BaseDirectory",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.String : baseDirectory": ""
+                },
+                "Content": "public XmlFileResolver(string baseDirectory)",
+                "XmlDocumentation": "",
+                "StartLine": 18
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : baseDirectory": ""
+                },
+                "Content": "public XmlFileResolver(string baseDirectory)",
+                "XmlDocumentation": "",
+                "StartLine": 18
+              },
+              "Id": "M:Microsoft.CodeAnalysis.XmlFileResolver.#ctor(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public class XmlFileResolver",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.XmlFileResolver\">\r\n    <summary>\r\n    Resolves references to XML files specified in the source.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.XmlFileResolver",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.XmlFileResolver\">\r\n    <summary>\r\n    Resolves references to XML files specified in the source.\r\n    </summary>\r\n</member>\r\n"
+        }
+      ],
+      "Structs": [
+        {
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference : other": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public bool Equals(CommandLineAnalyzerReference other)",
+                "XmlDocumentation": "",
+                "StartLine": 35
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference : other": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public bool Equals(CommandLineAnalyzerReference other)",
+                "XmlDocumentation": "",
+                "StartLine": 35
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.Equals(Microsoft.CodeAnalysis.CommandLineAnalyzerReference)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 30
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 30
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.Equals(System.Object)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 40
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 40
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.GetHashCode",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public string FilePath",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.FilePath\">\r\n    <summary>\r\n    Assembly file path.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.FilePath",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.FilePath\">\r\n    <summary>\r\n    Assembly file path.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.String : path": ""
+                },
+                "Content": "public CommandLineAnalyzerReference(string path)",
+                "XmlDocumentation": "",
+                "StartLine": 14
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : path": ""
+                },
+                "Content": "public CommandLineAnalyzerReference(string path)",
+                "XmlDocumentation": "",
+                "StartLine": 14
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineAnalyzerReference.#ctor(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public struct CommandLineAnalyzerReference",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference\">\r\n    <summary>\r\n    Describes a command line analyzer assembly specification.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineAnalyzerReference\">\r\n    <summary>\r\n    Describes a command line analyzer assembly specification.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.CommandLineReference : other": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public bool Equals(CommandLineReference other)",
+                "XmlDocumentation": "",
+                "StartLine": 47
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.CommandLineReference : other": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public bool Equals(CommandLineReference other)",
+                "XmlDocumentation": "",
+                "StartLine": 47
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineReference.Equals(Microsoft.CodeAnalysis.CommandLineReference)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 42
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 42
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineReference.Equals(System.Object)",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 53
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 53
+              },
+              "Id": "M:Microsoft.CodeAnalysis.CommandLineReference.GetHashCode",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineReference",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public MetadataReferenceProperties Properties",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineReference.Properties\">\r\n    <summary>\r\n    Metadata reference properties.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineReference.Properties",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineReference",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineReference.Properties\">\r\n    <summary>\r\n    Metadata reference properties.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string Reference",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineReference.Reference\">\r\n    <summary>\r\n    Metadata file path or an assembly display name.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineReference.Reference",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineReference",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineReference.Reference\">\r\n    <summary>\r\n    Metadata file path or an assembly display name.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public struct CommandLineReference",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineReference\">\r\n    <summary>\r\n    Describes a command line metadata reference (assembly or netmodule) specification.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.CommandLineReference",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineReference\">\r\n    <summary>\r\n    Describes a command line metadata reference (assembly or netmodule) specification.\r\n    </summary>\r\n</member>\r\n"
+        },
+        {
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public bool IsScript",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineSourceFile.IsScript\">\r\n    <summary>\r\n    True if the file should be treated as a script file.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineSourceFile.IsScript",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineSourceFile",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineSourceFile.IsScript\">\r\n    <summary>\r\n    True if the file should be treated as a script file.\r\n    </summary>\r\n</member>\r\n"
+            },
+            {
+              "Syntax": {
+                "Content": "public string Path",
+                "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineSourceFile.Path\">\r\n    <summary>\r\n    Resolved absolute path of the source file (does not contain wildcards).\r\n    </summary>\r\n    <remarks>\r\n    Although this path is absolute it may not be normalized. That is, it may contain \"..\" and \".\" in the middle. \r\n    </remarks>\r\n</member>\r\n"
+              },
+              "Id": "P:Microsoft.CodeAnalysis.CommandLineSourceFile.Path",
+              "Parent": "T:Microsoft.CodeAnalysis.CommandLineSourceFile",
+              "XmlDocumentation": "<member name=\"P:Microsoft.CodeAnalysis.CommandLineSourceFile.Path\">\r\n    <summary>\r\n    Resolved absolute path of the source file (does not contain wildcards).\r\n    </summary>\r\n    <remarks>\r\n    Although this path is absolute it may not be normalized. That is, it may contain \"..\" and \".\" in the middle. \r\n    </remarks>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public struct CommandLineSourceFile",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineSourceFile\">\r\n    <summary>\r\n    Describes a source file specification stored on command line arguments.\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.CommandLineSourceFile",
+          "Parent": "N:Microsoft.CodeAnalysis",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.CommandLineSourceFile\">\r\n    <summary>\r\n    Describes a source file specification stored on command line arguments.\r\n    </summary>\r\n</member>\r\n"
+        }
+      ],
+      "Id": "N:Microsoft.CodeAnalysis",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    },
+    {
+      "Classes": [
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\AnalyzerFileReference.InMemoryAssemblyLoader.cs",
+          "InheritanceHierarchy": [
+            "!:System.Object",
+            "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference : other": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public bool Equals(AnalyzerReference other)",
+                "XmlDocumentation": "",
+                "StartLine": 348
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference : other": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public bool Equals(AnalyzerReference other)",
+                "XmlDocumentation": "",
+                "StartLine": 348
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.Equals(Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference)",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 343
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Object : obj": ""
+                },
+                "Returns": {
+                  "T:System.Boolean": ""
+                },
+                "Content": "public override bool Equals(object obj)",
+                "XmlDocumentation": "",
+                "StartLine": 343
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.Equals(System.Object)",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : language": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}": ""
+                },
+                "Content": "public override ImmutableArray<DiagnosticAnalyzer> GetAnalyzers(string language)",
+                "XmlDocumentation": "",
+                "StartLine": 94
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : language": ""
+                },
+                "Returns": {
+                  "T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}": ""
+                },
+                "Content": "public override ImmutableArray<DiagnosticAnalyzer> GetAnalyzers(string language)",
+                "XmlDocumentation": "",
+                "StartLine": 94
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.GetAnalyzers(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}": ""
+                },
+                "Content": "public override ImmutableArray<DiagnosticAnalyzer> GetAnalyzersForAllLanguages()",
+                "XmlDocumentation": "",
+                "StartLine": 83
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}": ""
+                },
+                "Content": "public override ImmutableArray<DiagnosticAnalyzer> GetAnalyzersForAllLanguages()",
+                "XmlDocumentation": "",
+                "StartLine": 83
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.GetAnalyzersForAllLanguages",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Reflection.Assembly": ""
+                },
+                "Content": "public Assembly GetAssembly()",
+                "XmlDocumentation": "",
+                "StartLine": 366
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Reflection.Assembly": ""
+                },
+                "Content": "public Assembly GetAssembly()",
+                "XmlDocumentation": "",
+                "StartLine": 366
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.GetAssembly",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 360
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Int32": ""
+                },
+                "Content": "public override int GetHashCode()",
+                "XmlDocumentation": "",
+                "StartLine": 360
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.GetHashCode",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "MethodSyntax": {
+                "Parameters": {
+                  "T:System.String : assemblyPath": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public static string TryGetRequestingAssemblyPath(string assemblyPath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.TryGetRequestingAssemblyPath(System.String)\">\r\n    <summary>\r\n    Maps from one assembly back to the assembly that requested it, if known.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 49
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.String : assemblyPath": ""
+                },
+                "Returns": {
+                  "T:System.String": ""
+                },
+                "Content": "public static string TryGetRequestingAssemblyPath(string assemblyPath)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.TryGetRequestingAssemblyPath(System.String)\">\r\n    <summary>\r\n    Maps from one assembly back to the assembly that requested it, if known.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 49
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.TryGetRequestingAssemblyPath(System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.TryGetRequestingAssemblyPath(System.String)\">\r\n    <summary>\r\n    Maps from one assembly back to the assembly that requested it, if known.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Properties": [
+            {
+              "Syntax": {
+                "Content": "public override string Display",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.Display",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "public override string FullPath",
+                "XmlDocumentation": ""
+              },
+              "Id": "P:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.FullPath",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Events": [
+            {
+              "Syntax": {
+                "Content": "AnalyzerLoadFailed",
+                "XmlDocumentation": ""
+              },
+              "Id": "E:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.AnalyzerLoadFailed",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "AssemblyLoad",
+                "XmlDocumentation": "<member name=\"E:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.AssemblyLoad\">\r\n    <summary>\r\n    Fired when an <see cref=\"T:System.Reflection.Assembly\"/> referred to by an <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\"/>\r\n    (or a dependent <see cref=\"T:System.Reflection.Assembly\"/>) is loaded.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "E:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.AssemblyLoad",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": "<member name=\"E:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.AssemblyLoad\">\r\n    <summary>\r\n    Fired when an <see cref=\"T:System.Reflection.Assembly\"/> referred to by an <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\"/>\r\n    (or a dependent <see cref=\"T:System.Reflection.Assembly\"/>) is loaded.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:System.Func{System.String,System.Reflection.Assembly} : getAssembly": "",
+                  "T:System.String : fullPath": ""
+                },
+                "Content": "public AnalyzerFileReference(string fullPath, Func<string, Assembly> getAssembly = null)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.#ctor(System.String,System.Func{System.String,System.Reflection.Assembly})\">\r\n    <summary>\r\n    Creates an AnalyzerFileReference with the given <paramref name=\"fullPath\"/>.\r\n    </summary>\r\n    <param name=\"fullPath\">Full path of the analyzer assembly.</param>\r\n    <param name=\"getAssembly\">An optional assembly loader to override the default assembly load mechanism.</param>\r\n</member>\r\n",
+                "StartLine": 59
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:System.Func{System.String,System.Reflection.Assembly} : getAssembly": "",
+                  "T:System.String : fullPath": ""
+                },
+                "Content": "public AnalyzerFileReference(string fullPath, Func<string, Assembly> getAssembly = null)",
+                "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.#ctor(System.String,System.Func{System.String,System.Reflection.Assembly})\">\r\n    <summary>\r\n    Creates an AnalyzerFileReference with the given <paramref name=\"fullPath\"/>.\r\n    </summary>\r\n    <param name=\"fullPath\">Full path of the analyzer assembly.</param>\r\n    <param name=\"getAssembly\">An optional assembly loader to override the default assembly load mechanism.</param>\r\n</member>\r\n",
+                "StartLine": 59
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.#ctor(System.String,System.Func{System.String,System.Reflection.Assembly})",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+              "XmlDocumentation": "<member name=\"M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference.#ctor(System.String,System.Func{System.String,System.Reflection.Assembly})\">\r\n    <summary>\r\n    Creates an AnalyzerFileReference with the given <paramref name=\"fullPath\"/>.\r\n    </summary>\r\n    <param name=\"fullPath\">Full path of the analyzer assembly.</param>\r\n    <param name=\"getAssembly\">An optional assembly loader to override the default assembly load mechanism.</param>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public partial class AnalyzerFileReference",
+            "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\">\r\n    <summary>\r\n    Represents analyzers stored in an analyzer assembly file.\r\n    </summary>\r\n    <remarks>\r\n    Analyzer are read from the file, owned by the reference, and doesn't change \r\n    since the reference is accessed until the reference object is garbage collected.\r\n    During this time the file is open and its content is read-only.\r\n    \r\n    If you need to manage the lifetime of the anayzer reference (and the file stream) explicitly use <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference\"/>.\r\n    </remarks>\r\n</member>\r\n"
+          },
+          "Id": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference",
+          "Parent": "N:Microsoft.CodeAnalysis.Diagnostics",
+          "XmlDocumentation": "<member name=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerFileReference\">\r\n    <summary>\r\n    Represents analyzers stored in an analyzer assembly file.\r\n    </summary>\r\n    <remarks>\r\n    Analyzer are read from the file, owned by the reference, and doesn't change \r\n    since the reference is accessed until the reference object is garbage collected.\r\n    During this time the file is open and its content is read-only.\r\n    \r\n    If you need to manage the lifetime of the anayzer reference (and the file stream) explicitly use <see cref=\"T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference\"/>.\r\n    </remarks>\r\n</member>\r\n"
+        },
+        {
+          "FilePath": "C:\\Users\\peterbi\\Documents\\GitHub\\roslyn\\src\\Compilers\\Core\\Desktop\\AnalyzerLoadFailureEventArgs.cs",
+          "InheritanceHierarchy": [
+            "T:System.Object",
+            "T:System.EventArgs"
+          ],
+          "Fields": [
+            {
+              "Syntax": {
+                "Content": "ErrorCode",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.ErrorCode",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "Exception",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.Exception",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs",
+              "XmlDocumentation": ""
+            },
+            {
+              "Syntax": {
+                "Content": "TypeName",
+                "XmlDocumentation": ""
+              },
+              "Id": "F:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.TypeName",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Constructors": [
+            {
+              "ConstructorSyntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.FailureErrorCode : errorCode": "",
+                  "T:System.Exception : ex": "",
+                  "T:System.String : typeName": ""
+                },
+                "Content": "public AnalyzerLoadFailureEventArgs(FailureErrorCode errorCode, Exception ex, string typeName)",
+                "XmlDocumentation": "",
+                "StartLine": 20
+              },
+              "Syntax": {
+                "Parameters": {
+                  "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.FailureErrorCode : errorCode": "",
+                  "T:System.Exception : ex": "",
+                  "T:System.String : typeName": ""
+                },
+                "Content": "public AnalyzerLoadFailureEventArgs(FailureErrorCode errorCode, Exception ex, string typeName)",
+                "XmlDocumentation": "",
+                "StartLine": 20
+              },
+              "Id": "M:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.#ctor(Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs.FailureErrorCode,System.Exception,System.String)",
+              "Parent": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs",
+              "XmlDocumentation": ""
+            }
+          ],
+          "Syntax": {
+            "Content": "public class AnalyzerLoadFailureEventArgs",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerLoadFailureEventArgs",
+          "Parent": "N:Microsoft.CodeAnalysis.Diagnostics",
+          "XmlDocumentation": ""
+        }
+      ],
+      "Id": "N:Microsoft.CodeAnalysis.Diagnostics",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    },
+    {
+      "Id": "N:Microsoft.CodeAnalysis.Text",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    },
+    {
+      "Id": "N:Microsoft.Runtime.Hosting",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    },
+    {
+      "Id": "N:Microsoft.Runtime.Hosting.Interop",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    },
+    {
+      "Id": "N:Microsoft.VisualStudio.Shell.Interop",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    },
+    {
+      "Id": "N:Roslyn.Utilities",
+      "Parent": "Microsoft.CodeAnalysis.Desktop",
+      "XmlDocumentation": ""
+    }
+  ],
+  "Id": "Microsoft.CodeAnalysis.Desktop",
+  "MscorlibVersion": {
+    "Major": 4
+  }
+}
