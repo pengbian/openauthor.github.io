@@ -1,0 +1,13 @@
+{
+  "Namespaces": [
+    {
+      "Id": "N:Microsoft.CodeAnalysis.CompilerServer",
+      "Parent": "VBCSCompiler",
+      "XmlDocumentation": ""
+    }
+  ],
+  "Id": "VBCSCompiler",
+  "MscorlibVersion": {
+    "Major": 4
+  }
+}
